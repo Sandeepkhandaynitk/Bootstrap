@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+
+<style>
+
+body, html {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.container-div {
+  width: 100%;
+  height: 100%;
+}
+
+.leftpane {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: lightgray;
+    /*border-collapse: collapse;*/
+}
+
+.middlepane {
+    width: 24%;
+    height: 100%;
+    float: left;
+    margin-left: 2px;
+    background-color: lightgray;
+    /*border-collapse: collapse;*/
+}
+
+.rightpane {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  float: right;
+  background-color: lightgray;
+ /* border-collapse: collapse;*/
+}
+
+.toppane {
+  width: 100%;
+  height: 80px;
+
+  /*border-collapse: black;*/
+  background-color: darkslategrey;
+}
+
+
+#one,#two{
+   padding:20px;
+}
+
+</style>
+
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-div">
+  <div class="toppane"><h1>&nbsp &nbsp<strong>DATA Analyzer</strong><h1></div>
+  <div class="leftpane">
+    <strong>&nbsp &nbsp 1.Select Fromat</strong>
+    <br>
+
+
+
+
+
+
+    <div id="one">
+      <margin-left : 20px>
+    <input type= "checkbox" id="cb1" onclick="myFunction()">MySQL</input>
+    <br>
+        <div id = "mysqcb1" >
+
+          <label>Enter root</label>
+        <input type="text" name="name1" value=""/>
+        <br>
+        <label>Password</label>&nbsp
+        <input type="password" name="password" placeholder="password"/>
+        <br>
+        <style margin-left :100px>
+        <input type="localhost" name="localhost" value=""/>
+        <br></style>
+      <!--<button type="button" class="btn btn-outline-light">Light</button>-->
+     <button type="submit" class="btn btn-primary">Submit</button>
+
+        <!--<input type= "submit" onclick="myFunction0()"/>-->
+
+      </div>
+
+
+
+
+      <div>
+        <hr>
+        <input type= "checkbox" id="cb2" onclick="myFunction1()">CSV</input>
+        <div id = "csvcb" >
+         <!--<form action="" method="POST" enctype="multipart/form-data">-->
+         <input type="file" id="csvupfile" name="file" />
+         <!--<button type="submit" onclick="myFunction2()" name="submit"/>UPLOAD</button>-->
+            <button type="submit" class="btn btn-primary">UPLOAD</button>
+
+    </div>
+</div>
+</div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="middlepane"><strong>&nbsp &nbsp 2.Select Source</strong>
+
+
+
+
+<div class="divScroll">
+      <div id ="two" >
+        <br>
+        
+        <p>&nbsp &nbsp &nbsp MySQL &nbsp &nbsp &nbsp &nbsp CSV</p> 
+      <hr> 
+      <div id = "mysqsbmt" >
+      <div>
+      <p> &nbsp  &nbsp <input  type = "button" style= "background-color:#FFF5EE" onclick = "myFunction5()" value= "+ information_schema"/></p>    
+      <hr>
+
+      <!--<button type="button" class="btn btn-light">Light</button>-->
+
+
+      <p> &nbsp  &nbsp <input  type = "button" style= "background-color:#FFF5EE" onclick = "myFunction4()" value= "+ learn"/> </p>
+      <hr> 
+      
+      <div id="sslearn" >
+      
+      <a href="#" style="background-color:#8b8378;padding: 7px 84px 7px 80px;">customer</a></br></br></style>
+      <a href="#" style="background-color:#8b8378;padding: 7px 95px 7px 95px;">order</a></br></br></style>
+      <a href="#" style="background-color:#8b8378;padding: 7px 95px 7px 95px;">tester</a></br></br></style>
+
+      <!--<div id = "sslearn" hidden="">
+      <h3 id="formheading">customers</h3>  
+        <h3 id="formheading">orders</h3>   
+        <h3 id="formheading">tester</h3>-->
+        
+      <hr>
+      </div>
+      <p> &nbsp  &nbsp  + mysql</p>
+      <hr>
+      
+      <div id="ssinfo" >
+      <a href="#" style="background-color:#8b8378;padding: 7px 35px 7px 75px;">customer-name</a></br></br></style>  
+      
+      <a href="#" style="background-color:#8b8378;padding: 7px 85px 7px 95px;">CusID</a></br></br></style>
+      <a href="#" style="background-color:#8b8378;padding: 7px 93px 7px 95px;">ADD</a></br></br></style>
+
+      <!--<div id = "sslearn" hidden="">
+      <h3 id="formheading">customers</h3>  
+        <h3 id="formheading">orders</h3>   
+        <h3 id="formheading">tester</h3>-->
+        
+      <hr>
+      </div>
+      <p> &nbsp  &nbsp  + mysql</p>
+      <hr>
+      
+      
+      
+      
+      
+      <p> &nbsp  &nbsp  + performance_schema</p>
+      <hr>
+      <p> &nbsp  &nbsp  + sys</p>
+      <hr>
+      
+      </div>
+      
+        <div id = "My" >
+        <div>
+         <input type="checkbox" >&nbsp OrderID</input>
+         <br>
+         <input type="checkbox">&nbsp CustomerID</input>
+         <br>
+         <input type="checkbox">&nbsp EmployeeID</input>
+         </div>
+         </div>
+      </div>
+      <div id="rpath" >
+      <div id="div6" style="display:none;"> 
+      <a href="#" style="padding:5px; background-color:red; text-align:center;"></a></br></br>
+        <p></p>
+        </div>
+      </div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <div class="rightpane">
+   &nbsp &nbsp <strong>Visulizer</strong></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+$(document).ready(function(){
+  
+$("#but1").click(function(){
+  $.ajax({
+  url: "test5.php",
+  type: "POST",
+  success: function(data){  //alert("D");
+    $("#sss").html(data);
+  }
+});
+});
+
+$("#fff").click(function(){
+  $.ajax({
+  url: "test9.php",
+  type: "POST",
+  success: function(data){  //alert("D");
+    $("#sss").html(data);
+  }
+});
+});
+});
+
+
+
+
+
+
+function myFunction0() {
+    var x = document.getElementById("mysqsbmt");
+   if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+     
+    }
+  document.getElementById("mysqsbmt1").style.display="block";
+}
+
+
+function myFunctionjoin() {
+     document.getElementById("p2").style.display="block";
+    
+
+}
+function myFunctiontrf(){
+  document.getElementById("p1").style.display="block";
+    
+
+}
+function myFunctionotf(){
+   document.getElementById("p3").style.display="block";
+}
+
+function myFunction() {
+    var x = document.getElementById("mysqcb1");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+  document.getElementById("csvcb").style.display="none";
+  document.getElementById("rpath").style.display="none";
+  document.getElementById("visupload").style.display="none";
+  document.getElementById("cb2").checked = false;
+  document.getElementById("sss").innerHTML="";
+}
+function myFunction1() {
+    var x = document.getElementById("csvcb");
+   if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+  document.getElementById("mysqcb1").style.display="none";
+  document.getElementById("mysqsbmt").style.display="none";
+  document.getElementById("cb1").checked = false;
+  document.getElementById("sss").innerHTML="";
+}
+function myFunction2() {
+    var x = document.getElementById("visupload");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+  var x=document.getElementById("csvupfile").value;
+  document.getElementById("rpath").innerHTML=x;
+  document.getElementById("rpath").style.display="block";
+  document.getElementById("mysqsbmt1").style.display="none";
+}
+function myFunction4() {
+    var x = document.getElementById("sslearn");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+  document.getElementById("ssinfo").style.display="none";
+  
+}
+
+function myFunction5() {
+    var x = document.getElementById("ssinfo");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+  document.getElementById("sslearn").style.display="none";
+}
+
+
+
+
+/*function redirect() {
+  window.location = "http://www.google.com/"
+
+}*/
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perfect Match</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+
+
+	<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
+	 <link rel="stylesheet" type="text/css" href="app.css">
+	 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<script type="text/javascript" src="IndexSinup.js"></script>
+		<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Purrfect Match</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      	<li class="active"><a href="#">Home</a></li>
+      	<li class="nav-item">
+         <a class="nav-link" href="#">About</a>
+     </li>
+     <li class="nav-item">
+         <a class="nav-link" href="#">Contact</a>
+     </li>
+         
+        
+        
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li id="1"><a href="#">Sign Up<i class="fa fa-user-plus"></i></a></li>
+        <br>
+    </br></br>
+        		<!--Sign Up Page Coding -->
+				
+
+
+
+				<!--<form>
+					<div id="Sup" >
+				  <div class="form-group">
+				    <label for="exampleInputName1">Name</label>
+				    <input type="name" class="form-control" id="exampleInputName1" placeholder="Fullname">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <div class="checkbox">
+				    <label for="gender">Gender</label>
+				    <input type="checkbox"  id="gender">
+				  </div>
+				</div>
+
+
+				  <div class="form-group">
+				    <label for="exampleInputFile">File input</label>
+				    <input type="file" id="exampleInputFile">
+				    <p class="help-block">Example block-level help text here.</p>
+				  </div>
+				  <div class="checkbox">
+				    <label>
+				      <input type="checkbox"> Check me out
+				    </label>
+				  </div>
+				  <button type="submit" class="btn btn-default">Submit</button>
+				</form>-->
+
+					<div class="input-group">
+                                    <span class="input-group-addon" id="uname">Name</span>
+                                    <input type="text" class="form-control" name="name"  aria-describedby="name" pattern="^([a-zA-Z]{1,})(\s([a-zA-Z]{1,}))*$" title="only alphbates and space is required (use only one space between two word) " placeholder="Enter your name" required>
+                                </div><br>
+                                
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="email">Email</span>
+                                    <input type="email" class="form-control" name="email"  aria-describedby="email" placeholder ="Enter your Emailid" required>
+                                </div><br>
+                                
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="block">Block</span>
+                                    <input type="text" class="form-control" name="block"  aria-describedby="block" placeholder="Enter your block" required>
+                                </div>
+                                <br>
+                                
+                                  <div class="input-group">
+                                    <span class="input-group-addon" id="uname">Password</span>
+                                    <input type="password" class="form-control" name="password"  aria-describedby="roomno" placeholder="Enter your password" required>
+                                 </div>
+                                
+                                <br>
+                                <fieldset class="form-group">
+                                        
+                                          <div class="form-check">
+                                            <label class="form-check-label">
+                                              <input type="radio" class="form-check-input" name="gender" id="optionsRadios1" value="male" checked>
+                                              Male
+                                            </label>
+                                          </div>
+                                         
+                                          <div class="form-check">
+                                          <label class="form-check-label">
+                                              <input type="radio" class="form-check-input" name="gender" id="optionsRadios2" value="female">
+                                              Female
+                                          </label>
+                                          </div>
+                                         
+                                </fieldset>   
+                             </div>
+                           
+
+
+
+
+
+
+
+
+
+
+
+         <li><a href="#">LogIn<i class="fa fa-user"></i></a></li>
+
+
+
+
+
+         	<form action="login" onsubmit="return validateform()" method="get" name="myform">
+    
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h1 class="panel-title">Login</h1>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    
+                    <input type="text" class="form-control" name="uname"  aria-describedby="uname" placeholder="Enter your Reg No" required>
+                    <span ></span>
+                    <br>
+                   
+                        <input type="password" class="form-control" name="pwd" aria-describedby="pwd" placeholder="Enter your password" required>
+                        <span ></span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><a href="forgotpassword.jsp">Forgot password</a></span>
+                    
+                    <br>
+                    
+                    
+                    <fieldset class="form-group">
+                                        
+                  <!--   <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="role" id="option2" value="users" checked>
+                            users
+                            </label>
+                    </div>    
+                        
+                        
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="role" id="option1" value="admin" >
+                             admin
+                         </label>
+                    </div> --> 
+                          
+                                             
+                                         
+                </fieldset>  
+                    <input type="submit" class="btn btn-default" value="Login">
+		</div>
+                
+                 
+				
+            </div>
+        </div></form>
+
+
+
+
+
+
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+	<div class="container">
+		<div class="row">
+		  	<div class="col-lg-12">
+				<div id="content">
+				<h1>Purrfect Match</h1>
+				<h3>The Only Human-Feline Dating App</h3>
+				<hr>
+				<button class="btn btn-default btn-lg"><i class="fa fa-paw"></i>Get Started!</button>
+			</div>
+		</div>
+	</div>
+</div>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+<!--	<script>
+	function myfunctionSu() {
+    var x = document.getElementById("Sup");
+	}
+</script>-->
+
+
+<script>
+	$(".fa-plus").click()
+
+
+
+
+<script>
+$( "1" ).click(function() {
+  $( this ).slideUp();
+});
+</script>
+
+
+
+
+<script>
+
+function myFunctiontSu(){
+	document.getElementById("Sup").style.display="block";
+    
+
+}
+</script>
+
+
+
+</body>
+</html>
